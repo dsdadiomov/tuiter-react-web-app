@@ -1,0 +1,61 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-container {
+    margin: 12px;
+}
+
+.wd-tuit {
+    border: 1px solid lightgray;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.wd-tuit-header {
+    display: flex;
+}
+
+.wd-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.wd-user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-margin {
+    margin-left: 30px; 
+}
+
+.wd-tuit-actions .fas {
+    color: gray;
+}
+
+.wd-tuit-actions .fas:hover {
+    color: black;
+}
+
+.custom-margin-right {
+    margin-right: 30px; 
+}
+
+.wd-header {
+    background-color: #f8f9fa; 
+    padding: 12px;
+}
+
+.wd-header h1 {
+    margin: 0;  
+}
+.vertical-divider {
+    border-left: 1px solid black;
+    height: 24px;  
+    margin: 0 10px;  
+}
