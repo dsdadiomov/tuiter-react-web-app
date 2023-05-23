@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Explore Page</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="index.css">  
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <style>
+        /* Add this to your CSS */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            height: 100vh; /* This makes the grid container take up the full height of the viewport */
+        }
+
+        #wd-navigation {
+            /* Styles for the navigation column */
+        }
+
+        #wd-main {
+            /* Styles for the main content column */
+        }
+    </style>
+</head>
+<div id="wd-navigation-left">
+  <div class="wd-sidebar-navigation">
+    <ul class="wd-sidebar-navigation-list">
+      <li class="wd-nav-item">
+        <div class="wd-logo-box">
+          <i class="fab fa-twitter"></i>
+        </div>
+      </li>
+      <li><a href="home.html"><i class="fas fa-home"></i><span class="nav-item-label">Home</span></a></li>
+      <li><a href="explore-css.html"><i class="fas fa-hashtag"></i><span class="nav-item-label">Explore</span></a></li>
+      <li><a href="notifications.html"><i class="fas fa-bell"></i><span class="nav-item-label">Notifications</span></a></li>
+      <li><a href="messages.html"><i class="fas fa-envelope"></i><span class="nav-item-label">Messages</span></a></li>
+      <li><a href="bookmarks.html"><i class="fas fa-bookmark"></i><span class="nav-item-label">Bookmarks</span></a></li>
+      <li><a href="lists.html"><i class="fas fa-list-alt"></i><span class="nav-item-label">Lists</span></a></li>
+      <li><a href="profile.html"><i class="fas fa-user"></i><span class="nav-item-label">Profile</span></a></li>
+    </ul>
+  </div>
+</div>
+<body>
+    <div class="grid-container">
+        <div id="wd-navigation">
+
+        </div>
+        <div id="wd-main">
+            <div class="wd-search-container">
+                <div class="wd-input-group">
+                    <i class="fas fa-search wd-search-icon"></i>
+                    <input class="wd-search" type="text" placeholder="Search Tuiter">
+                </div>
+                <i class="fas fa-cog wd-gear-icon"></i>
+            </div> 
+            <ul class="wd-tab-list">
+                <li class="wd-tab-item active"><a href="#">For You</a></li>
+                <li class="wd-tab-item"><a href="#">Trending</a></li>
+                <li class="wd-tab-item"><a href="#">News</a></li>
+                <li class="wd-tab-item"><a href="#">Sports</a></li>
+                <li class="wd-tab-item"><a href="#">Entertainment</a></li>
+            </ul>
+            <div class="wd-image-container">
+                <img src="merc-f1.png" alt="Merc f1">
+                <h2 class="wd-image-text">Mereces F1 Breaking News</h2>
+            </div>
+            <div class="wd-trending-container">
+                <h6 class="wd-trending-heading">Trending in News</h6>
+                <ul class="wd-trending-list">
+                  <li class="wd-trending-item">
+                    <div class="wd-trending-text">
+                      <span class="wd-trending-title">Lewis Hamilton</span>
+                      <div class="wd-retweets-container">
+                        <span class="wd-trending-retweets">10K Retweets</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+                <div class="wd-trending-container">
+                    <h6 class="wd-trending-heading">Trending Celebrities</h6>
+                    <ul class="wd-trending-list">
+                      <li class="wd-trending-item">
+                        <div class="wd-trending-text">
+                          <span class="wd-trending-title">Elon Musk</span>
+                          <div class="wd-retweets-container">
+                            <span class="wd-trending-retweets">10K Retweets</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="wd-trending-container">
+                    <h6 class="wd-trending-heading">Trending News</h6>
+                    <ul class="wd-trending-list">
+                      <li class="wd-trending-item">
+                        <div class="wd-trending-text">
+                          <span class="wd-trending-title">Covid</span>
+                          <div class="wd-retweets-container">
+                            <span class="wd-trending-retweets">5K Retweets</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="wd-trending-container">
+                    <h6 class="wd-trending-heading">Trending Sports</h6>
+                    <ul class="wd-trending-list">
+                      <li class="wd-trending-item">
+                        <div class="wd-trending-text">
+                          <span class="wd-trending-title">Soccer</span>
+                          <div class="wd-retweets-container">
+                            <span class="wd-trending-retweets">3K Retweets</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="wd-trending-container">
+                    <h6 class="wd-trending-heading">Trending Stocks</h6>
+                    <ul class="wd-trending-list">
+                      <li class="wd-trending-item">
+                        <div class="wd-trending-text">
+                          <span class="wd-trending-title">Tesla</span>
+                          <div class="wd-retweets-container">
+                            <span class="wd-trending-retweets">2K Retweets</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+              </div>
+              
+              
+              
+
+    </div>
+</body>
+</html>
+
