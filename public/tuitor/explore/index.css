@@ -341,9 +341,10 @@ img {
   }
   
   
-
-
-
-
+@media (max-width: 768px) {
+    #wd-sidebar-right {
+        display: none;
+    }
+}
 
 
