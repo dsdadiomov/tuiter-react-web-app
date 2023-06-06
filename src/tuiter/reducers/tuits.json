@@ -1,4 +1,18 @@
-[
+[{ 
+    "_id": 123,
+    "topic": "Space", 
+    "userName": "SpaceX",
+    "time": "2h",   
+    "image": "/images/spacex.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit":  "Launch site weather conditions have improved to 90% favorable for liftoff but teams are keeping an eye on upper level winds. A live webcast of this mission will begin about five minutes prior to liftoff"
+  
+  },
+
  
 { 
     "_id": 234,
@@ -6,7 +20,7 @@
     "userName": "SpaceX",
     "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
     "time": "2h",   
-    "image": "spacex.png",
+    "image": "/images/spacex.png",
     "liked": true,
     "replies": 123,
     "retuits": 432,
@@ -21,6 +35,11 @@
     "userName": "Tesla",
    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
    "time": "4d",   
-   "image": "tesla.png" }
-   
+   "image": "/images/tesla.png", 
+   "liked": true,
+   "replies": 123,
+   "retuits": 432,
+   "likes": 2345,
+   "handle": "@tesla",
+   "tuit":  "Congratulations to Giga Shanghai & Tesla China SDS teams for their excellent work overcoming many obstacles over many years!!"}
 ]
