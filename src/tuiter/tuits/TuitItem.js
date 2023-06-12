@@ -1,37 +1,46 @@
 import React from 'react';
 import './TuitItem.css';
 import TuitStats from './TuitStats';
+import { AiFillCheckCircle } from "react-icons/ai";
+import { RxCross2 } from "react-icons/rx";
 import { useDispatch } from 'react-redux';
-import { deleteTuit } from '../reducers/tuits-reducer';
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import "bootstrap-icons/font/bootstrap-icons.css"
 
 const TuitItem = ({ tuit }) => {
   const dispatch = useDispatch();
 
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
-  return (
-    <div className="tuit-item">
-      <div className="header">
-        <img className="avatar" src={tuit.image} alt="User Avatar" />
-        <div className="user-info">
-          <span className="username">{tuit.userName}</span>
-          <span className="handle">{tuit.handle}</span>
-          <span className="time">{tuit.time}</span>
+    return (
+      <li className="list-group-item">
+        <div className="row">
+          <div className="col-2">
+            <img
+              width={70}
+              height={70}
+              className="rounded-circle"
+              src={`/images/${tuit.image}`}
+            ></img>
+          </div>
+          <div className="col-10">
+            <div>
+              <RxCross2
+                className="float-end"
+                onClick={() => deleteTuitHandler(tuit._id)}
+              />
+              {tuit.username} <AiFillCheckCircle color="blue" /> {tuit.handle} •{" "}
+              {tuit.time}
+            </div>
+            <div className="fw-bolder">{tuit.topic}</div>
+            <div>{tuit.tuit}</div>
+            <TuitStats tuit={tuit} />
+          </div>
         </div>
-      </div>
-      <div className="content">
-        <p>{tuit.tuit}</p>
-      </div>
-      <i
-        className="bi bi-x-lg delete-button"
-        onClick={() => deleteTuitHandler(tuit._id)}
-      ></i>
-      <TuitStats tuit={tuit} />
-    </div>
-  );
-};
-
-export default TuitItem;
+      </li>
+    );
+  }
+  
+  export default TuitItem;

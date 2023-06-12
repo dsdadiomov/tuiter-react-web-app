@@ -5,7 +5,7 @@ import TuitsList from '../tuits/TuitsList';
 import WhatsHappening from '../whats-happening';
 
 const HomeScreen = () => {
-  const tuits = useSelector(state => state.tuits);  // get tuits data from Redux store
+  const tuits = useSelector(state => state.tuits);  
 
   return (
     <div>
