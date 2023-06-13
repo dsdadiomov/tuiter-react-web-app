@@ -1,20 +1,15 @@
-// in HomeScreen.js
 import React from 'react';
-import { useSelector } from 'react-redux';
-import TuitsList from '../tuits/TuitsList';
+import TuitsList from '../tuits/tuit-list';
 import WhatsHappening from '../whats-happening';
 
-const HomeScreen = () => {
-  const tuits = useSelector(state => state.tuits);  
-
+function HomeScreen() {
   return (
-    <div>
-      <h4>Home</h4>
+    <>
+      <h1>Home</h1>
       <WhatsHappening />
-      <TuitsList />  
-    </div>
+      <TuitsList />
+    </>
   );
-};
-
+}
 export default HomeScreen;
 

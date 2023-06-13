@@ -1,21 +1,24 @@
+import React from 'react';
 import Labs from "./labs";
 import HelloWorld from "./labs/a3/hello-world";
 import Tuiter from "./tuiter";
-import {BrowserRouter} from "react-router-dom";
-import {Routes, Route, Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
-   return (
+  console.log(process.env.REACT_APP_API_BASE);
+
+  return (
     <BrowserRouter>
       <div className="container">
         <Routes>
-          <Route path="/"         element={<Navigate to="/labs"/>}/>
-          <Route path="/labs/*"   element={<Labs/>}/>
-          <Route path="/hello"    element={<HelloWorld/>}/>
-          <Route path="/tuiter/*" element={<Tuiter/>}/>
+          <Route path="/" element={<Navigate to="/labs" />} />
+          <Route path="/labs/*" element={<Labs />} />
+          <Route path="/hello" element={<HelloWorld />} />
+          <Route path="/tuiter/*" element={<Tuiter />} />
         </Routes>
       </div>
     </BrowserRouter>
-   );
+  );
 }
+
 export default App;
