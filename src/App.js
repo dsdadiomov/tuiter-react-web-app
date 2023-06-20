@@ -2,13 +2,12 @@ import React from 'react';
 import Labs from "./labs";
 import HelloWorld from "./labs/a3/hello-world";
 import Tuiter from "./tuiter";
-import { BrowserRouter, Routes, Route, Navigate, HashRouter } from "react-router-dom";
+import { BrowserRouter, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router";
 
 function App() {
-  console.log(process.env.REACT_APP_API_BASE);
-
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="container">
         <Routes>
           <Route path="/" element={<Navigate to="/labs" />} />
@@ -17,7 +16,7 @@ function App() {
           <Route path="/tuiter/*" element={<Tuiter />} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

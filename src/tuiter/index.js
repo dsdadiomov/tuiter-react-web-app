@@ -6,7 +6,7 @@ import HomeScreen from "./home-screen";
 import BookmarksScreen from "./bookmarks-screen";
 import ProfileScreen from "./user/profile-screen";
 import RegisterScreen from "./user/register-screen";
-import LoginScreen from "./user/Login-screen";
+import LoginScreen from "./user/login-screen";
 import WhoToFollowList from "./who-to-follow";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
