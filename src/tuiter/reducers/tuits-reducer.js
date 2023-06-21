@@ -1,10 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {
-  findTuitsThunk,
-  deleteTuitThunk,
-  createTuitThunk,
-  updateTuitThunk,
-} from "../services/tuits-thunks.js";
+import {findTuitsThunk, deleteTuitThunk, createTuitThunk,updateTuitThunk} from "../services/tuits-thunks.js";
 
 const initialState = {
   tuits: [],
@@ -47,5 +42,5 @@ const tuitsSlice = createSlice({
   reducers: {},
 });
 
+export const { updatelikes, createTuit, deleteTuit } = tuitsSlice.actions;
 export default tuitsSlice.reducer;
-export const { updateLikes, createTuit, deleteTuit } = tuitsSlice.actions;

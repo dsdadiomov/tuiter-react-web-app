@@ -8,7 +8,7 @@ const TuitSummaryList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk());
-    }, []);
+    }, [dispatch]);
     return (
       <ul className="list-group">
         {loading && <li className="list-group-item">Loading...</li>}
@@ -17,7 +17,6 @@ const TuitSummaryList = () => {
         ))}
       </ul>
     );
-    
 }
 
 export default TuitSummaryList;

@@ -8,7 +8,6 @@ import {
 } from "../services/auth-thunks";
 
 function ProfileScreen() {
-  // get user redux state from store in index.js
   const { currentUser } = useSelector((state) => state.user);
   const [profile, setProfile] = useState(currentUser);
 
@@ -25,7 +24,7 @@ function ProfileScreen() {
       setProfile(payload);
     };
     loadProfile();
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
